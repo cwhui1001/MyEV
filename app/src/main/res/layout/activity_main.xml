@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Car Model Selection -->
+    <RelativeLayout
+        android:id="@+id/selectModelRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/myEV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/myEV"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/selectModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="@string/select_your_model"
+            android:textSize="25sp"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/iguanaImageButton"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/iguana"
+            android:contentDescription="@string/iguanaImg"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/selectModel"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/iguanaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iguanaImageButton"
+            android:text="@string/iguana"
+            android:textSize="25sp"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/penguinImageButton"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:src="@drawable/penguin2"
+            android:contentDescription="@string/penguinImg"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/iguanaTxt"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/penguinTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/penguinImageButton"
+            android:layout_marginTop="600dp"
+            android:text="@string/penguin"
+            android:textSize="25sp"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_marginBottom="50dp">
+
+        <!-- Car Variant Selection and Loan Details -->
+        <LinearLayout
+            android:id="@+id/layoutVariant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/ivSelectedModel"
+                android:layout_width="175dp"
+                android:layout_height="165dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/selectedModel" />
+
+            <TextView
+                android:id="@+id/tvSelectedModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="25sp"
+                android:typeface="sans" />
+
+            <LinearLayout
+                android:id="@+id/purpleBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#4D800080"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/txtCarVariant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_car_variant"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="16dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerVariant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:prompt="@string/variant_prompt"  />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCarAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/txtInterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="@string/enter_interest_rate"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtLoanPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="@string/enter_loan_period_year"
+                android:inputType="number"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnCalc"
+                style="@android:style/Widget.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="#57338F"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:shadowColor="@color/black"
+                android:text="@string/calculate"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/monthlyInstall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

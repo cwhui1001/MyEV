@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MyEVCarLoanCalculator</string>
+
+    <!-- Car Model 1 Variants -->
+    <string-array name="model1_variants">
+        <item>Dynamic</item>
+        <item>Premium</item>
+    </string-array>
+
+    <!-- Car Model 1 Variant Amounts -->
+    <string-array name="model1_variant_amounts">
+        <item>200000</item>
+        <item>300000</item>
+    </string-array>
+
+    <!-- Car Model 2 Variants -->
+    <string-array name="model2_variants">
+        <item>Dynamic</item>
+        <item>Performance</item>
+        <item>Premium</item>
+    </string-array>
+
+    <!-- Car Model 2 Variant Amounts -->
+    <string-array name="model2_variant_amounts">
+        <item>250000</item>
+        <item>350000</item>
+        <item>500000</item>
+    </string-array>
+
+    <string name="variant_prompt">Select variant</string>
+    <string name="myEV">MyEV</string>
+    <string name="select_your_model">Select your model :</string>
+    <string name="iguanaImg">IguanaImg</string>
+    <string name="iguana">Iguana</string>
+    <string name="penguinImg">PenguinImg</string>
+    <string name="penguin">Penguin</string>
+    <string name="selectedModel">selectedModel</string>
+    <string name="select_car_variant">Select Car Variant:</string>
+    <string name="enter_interest_rate">Enter Interest Rate (%):</string>
+    <string name="enter_loan_period_year">Enter Loan Period (year):</string>
+    <string name="calculate">Calculate</string>
+
+</resources>
