@@ -17,7 +17,7 @@ The MyEV Car Loan Calculator is a user-friendly mobile application designed to h
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/myev-car-loan-calculator.git
+   git clone https://github.com/cwhui1001/MyEV.git
    ```
 2. Open the project in Android Studio.
 3. Sync the Gradle files and build the project.
