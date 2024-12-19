@@ -1,11 +1,10 @@
 # MyEV Car Loan Calculator
 
-The MyEV Car Loan Calculator is a user-friendly mobile application designed to help users calculate car loan payments for electric vehicles (EVs). It provides detailed breakdowns of loan repayment schedules and supports customization based on user input.
+The MyEV Car Loan Calculator is a user-friendly mobile application designed to help users calculate car loan payments for electric vehicles (EVs). 
 
 ## Features
 
 - **Loan Calculation**: Input loan amount, interest rate, and loan tenure to calculate monthly payments.
-- **Amortization Schedule**: View a detailed breakdown of principal and interest payments over the loan term.
 - **Custom Inputs**: Adjust parameters like down payment and interest rates.
 - **Android Native Design**: Built specifically for Android devices with a user-friendly interface.
 
